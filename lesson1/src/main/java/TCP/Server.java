@@ -1,3 +1,5 @@
+package TCP;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -50,7 +52,7 @@ public class Server {
                         socketOutput.println("bye");
                     } else {
                         //打印到屏幕，回送数据长度
-                        System.out.println(str);
+                        System.out.println(str.toUpperCase());
                         socketOutput.println("回送" + str.length());
 
                     }
